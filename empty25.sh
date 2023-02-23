@@ -18,7 +18,11 @@ echo "User name is:" $userName
 
 max=`ls | grep -E $userName | grep -oE [0-9]+ | sort -n | tail -n1`
 
-echo "The maximum number is:" $max
+if [[ "$max" -eq "0" ]]; then
+	echo "No files with the pattern <username><number>"
+else
+	echo "The maximum number is:" $max
+fi
 
 #create 25 new files with the pattern <userName><number>
 
