@@ -6,6 +6,6 @@ read city
 
 echo "Good morning $city, rise and shine"
 
-Variable='Hello World'
+Variable='Hello World of Information Technology'
 echo $Variable
 
